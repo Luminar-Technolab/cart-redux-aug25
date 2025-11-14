@@ -545,4 +545,5 @@
             4. Basic redux methods
                 - configureStore() : used to generate redux store, it has to add valid reducer which hold updated state
                 - createSlice() : to combine both action & reducer, it has name, initial state (is the reducer state), reducers is an object which consist of  collection of action  function, action will update state using reducer function. slice return actions and reducer
+               - createAsyncThunk() : A function that accepts a Redux action type string and a callback function that should return a promise.
 
