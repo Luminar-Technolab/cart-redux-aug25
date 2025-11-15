@@ -8,7 +8,7 @@ import { getAllProducts } from '../redux/slices/productSlice'
 function Home() {
   const dispatch = useDispatch()
   const {allProducts,loading,error} = useSelector((state)=>state.productReducer)
-  console.log(allProducts);
+  // console.log(allProducts);
   
   useEffect(()=>{
     dispatch(getAllProducts())
@@ -37,7 +37,7 @@ function Home() {
                     <Link to={`/products/${product?.id}/view`} className='btn btn-primary'>View More...</Link>
                   </Card.Body>
                 </Card>
-            </div>
+              </div>
             )) 
           :
           <p className='fw-bold fs-5'>Product Not Found!!!</p>
